@@ -1,5 +1,8 @@
 # .gitignore
 venv/
+Dataset/
+runs/
+models/
 __pycache__/
 *.pyc
 *.pyo
