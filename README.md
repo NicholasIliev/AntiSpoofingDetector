@@ -41,32 +41,53 @@ If you have a compatible GPU and want to accelerate the system using CUDA, follo
 
 2. Install PyTorch with GPU support: https://pytorch.org/get-started/locally/
 
-## Unzip Dataset, Runs, and Models
+## Dataset Setup
+
+To set up the `Dataset` directory and its subdirectories for the AntiSpoofingDetector, follow these steps:
+
+### 1. Create the Dataset Directory:
+
+Open a terminal or command prompt and navigate to the root directory of the AntiSpoofingDetector project. Run the following command:
+
+```bash
+mkdir Dataset
+```
+
+### 2. Create Subdirectories:
+
+Open a terminal or command prompt and navigate to the root directory of the AntiSpoofingDetector project. Run the following command:
+
+```bash
+mkdir Dataset/all
+mkdir Dataset/DataCollect
+mkdir Dataset/Fake
+mkdir Dataset/Real
+mkdir Dataset/SplitData
+```
+
+### 3. Populate the Directories
+
+If you choose to manually populate the dataset, consider adding real faces and fake faces to the `Dataset/all` directory, aiming for an equal split of each.
+
+Before proceeding, make sure to alter the `classID` parameter in the `dataCollection.py` file:
+
+- Set `classID` to 0 for fake faces.
+- Set `classID` to 1 for real faces.
+
+This adjustment ensures proper labeling during the data collection process.
+
+**Note:** It's essential to maintain a balanced representation of real and fake faces in the `Dataset/all` directory to enhance the performance and reliability of the AntiSpoofingDetector.
+
+After making these changes, you can proceed with the data collection process as outlined in the project instructions.
+
+## Runs, and Models
 
 The AntiSpoofingDetector relies on various archives for its functionality. Follow these steps to set up the necessary components:
 
-### 1. Download the Dataset
-Obtain the dataset file named `Dataset.zip` from the provided source.
-
-### 2. Extract the Dataset
-Locate the downloaded `Dataset.zip` file in your file system.
-
-#### On Windows:
-- Right-click on the `Dataset.zip` file.
-- Select "Extract All..." and choose the destination folder.
-
-#### On Linux or macOS:
-- Open a terminal.
-- Navigate to the directory containing the `Dataset.zip` file.
-- Run the following command:
-    ```bash
-    unzip Dataset.zip
-    ```
-
-### 3. Download the Runs
+### 1. Download the Runs
 Obtain the runs archive file named `runs.zip` from the provided source.
 
-### 4. Extract the Runs
+### 2. Extract the Runs
 Locate the downloaded `runs.zip` file in your file system.
 
 #### On Windows:
@@ -81,10 +102,10 @@ Locate the downloaded `runs.zip` file in your file system.
     unzip runs.zip
     ```
 
-### 5. Download the Models
+### 3. Download the Models
 Obtain the models archive file named `models.zip` from the provided source.
 
-### 6. Extract the Models
+### 4. Extract the Models
 Locate the downloaded `models.zip` file in your file system.
 
 #### On Windows:
