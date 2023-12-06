@@ -80,32 +80,14 @@ This adjustment ensures proper labeling during the data collection process.
 
 After making these changes, you can proceed with the data collection process as outlined in the project instructions.
 
-## Runs, and Models
+## Models
 
 The AntiSpoofingDetector relies on various archives for its functionality. Follow these steps to set up the necessary components:
 
-### 1. Download the Runs
-Obtain the runs archive file named `runs.zip` from the provided source.
-
-### 2. Extract the Runs
-Locate the downloaded `runs.zip` file in your file system.
-
-#### On Windows:
-- Right-click on the `runs.zip` file.
-- Select "Extract All..." and choose the destination folder.
-
-#### On Linux or macOS:
-- Open a terminal.
-- Navigate to the directory containing the `runs.zip` file.
-- Run the following command:
-    ```bash
-    unzip runs.zip
-    ```
-
-### 3. Download the Models
+### 1. Download the Models
 Obtain the models archive file named `models.zip` from the provided source.
 
-### 4. Extract the Models
+### 2. Extract the Models
 Locate the downloaded `models.zip` file in your file system.
 
 #### On Windows:
