@@ -119,6 +119,10 @@ To run the AntiSpoofingDetector, follow these steps:
     ```bash
     python main.py
     ```
+4. To quit press:
+    ```bash
+    q
+    ```
 
 ### Training a New Model
 
