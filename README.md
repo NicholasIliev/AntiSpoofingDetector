@@ -12,3 +12,34 @@ The **AntiSpoofingDetector** is an advanced anti-spoofing/liveness detection sys
 
 - **Trained Model:** The AntiSpoofingDetector incorporates a pre-trained model, ensuring accurate and reliable performance in different scenarios.
 
+## Installation
+
+To use the AntiSpoofingDetector, you need to install the following dependencies:
+
+### OpenCV
+
+```bash
+pip install opencv-python
+```
+
+### Ultralytics
+
+```bash
+pip install ultralytics
+```
+### Mediapipe
+
+```bash
+pip install mediapipe
+```
+
+### PyTorch (Optional, for GPU acceleration)
+
+If you have a compatible GPU and want to accelerate the system using CUDA, follow these steps:
+
+1. Install the CUDA Toolkit: [CUDA Toolkit Installation Guide](link-to-cuda-installation-guide).
+
+2. Install PyTorch with GPU support: https://pytorch.org/get-started/locally/
+
+
+
