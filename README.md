@@ -1,4 +1,4 @@
-# AntiSpoofingDetector
+# Anti-Spoofing Detector
 
 The **AntiSpoofingDetector** is an advanced anti-spoofing/liveness detection system that leverages facial recognition technology. This project is implemented using **Python** and **OpenCV**, providing a robust solution to distinguish between real faces and spoof attempts.
 
