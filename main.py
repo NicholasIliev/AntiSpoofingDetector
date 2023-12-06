@@ -16,6 +16,14 @@ model = YOLO('models/n_version_1_30.pt')
 # List of class names
 classNames = ["fake", "real"]
 
+# Get screen resolution
+screen_width = 3840  # Change this to your screen resolution
+screen_height = 2160  # Change this to your screen resolution
+
+# Create a resizable window
+cv2.namedWindow("Image", cv2.WINDOW_NORMAL)
+cv2.resizeWindow("Image", screen_width, screen_height)
+
 while True:
     # Read frame from video capture
     success, img = cap.read()
